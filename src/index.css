@@ -1,0 +1,32 @@
+h1 {
+    color:purple;
+    font-style:italic
+}
+
+.note {
+    color:brown;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.error{
+    color: red;
+    font-size: 20px;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-color:red;
+    border-style: solid;
+}
+
+.correct{
+    color: green;
+    font-size: 20px;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-color:green;
+    border-style: solid;
+}
