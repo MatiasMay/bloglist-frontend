@@ -12,11 +12,11 @@ const Blog = ({ blog, deleteBlog, addLike }) => {
     marginBottom: 5
   }
   return(
-    <div style={blogStyle}>
+    <div style={blogStyle} className='blog'>
       <div>
         {blog.title} {blog.author} <button onClick={ () => setExtraDetails(!extraDetails)}>{extraDetails === true ? 'Hide' : 'Show'}</button>
-        <div style={showDetails}>
-          {blog.url}<br/> {blog.likes}<button onClick={() => addLike(blog)}>Like</button><br/> {blog.user.name}<br/><button style={showDelete} onClick={() => deleteBlog(blog)}>Delete</button>
+        <div style={showDetails} className="togglableDetails">
+          {blog.url}<br/> {blog.likes} <button id='likebutton' onClick={() => addLike(blog)}>Like</button><br/> {blog.user.name}<br/><button id='deletebutton'style={showDelete} onClick={() => deleteBlog(blog)}>Delete</button>
         </div>
       </div>
     </div> )

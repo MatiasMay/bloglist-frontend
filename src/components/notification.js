@@ -6,7 +6,7 @@ const Notification = ({ message, messageType }) => {
   }
   switch(messageType){
   case 1:
-    return <div className="error">{message}</div>
+    return <div id='errormessage' className="error">{message}</div>
   case 2:
     return <div className="correct">{message}</div>
   default:
